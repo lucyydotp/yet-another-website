@@ -1,0 +1,44 @@
+/* https://colorcolor.in/?s=eJydUstugzAQ_BdzXVk2BIi55pJemqg9Vj1swSRRCSDbNKmi_HvXPCTUJpVaicfa65md8e6FtVhp5_QWDR4tyy7MOt1SoGBKPdSFPrMsBGZP6PL9uI6BHfH82B035XY4SKjEowamlwvbd3pgROMoRwy6LlgmBQVoKcd4DBL4UoFkwA6106ZtKnR63enNhzZRIlhWYmX1laqjm7FFIU_jkTBJbhMaYqJykSB0ddjN0Er91CL4AgRP-g-9SrLrFb6bCMUInHmQEgRQYfFXD71uTxbLwcx9D6G670HxOTYmKD0RcBXddjD1IZzf279NxBEPp0ZM8S8-4l98zJBpD-Spt-Eb8err0pAd6l0_pQ2JqvBz1dTOoHWjOJj2135Cnelox-hy1VSNsU94ImoIomiJKCAo0_RtWdBfa1FoCHKZyIWCIBUyl4ok5x723GLuJTXve1uRkC_EMO_Y */
+:root {
+    --color-brown-100: #fbf6f2;
+    --color-brown-200: #f5e5da;
+    --color-brown-300: #edcab5;
+    --color-brown-400: #e3a487;
+    --color-brown-500: #d3785b;
+    --color-brown-600: #b3503f;
+    --color-brown-700: #8b2e2e;
+    --color-brown-800: #5f1320;
+    --color-brown-900: #2f030f;
+
+    --color-pink-100: #fef5f5;
+    --color-pink-200: #fde4e3;
+    --color-pink-300: #fbc8c7;
+    --color-pink-400: #f7a1a2;
+    --color-pink-500: #ec707b;
+    --color-pink-600: #ca465c;
+    --color-pink-700: #942e46;
+    --color-pink-800: #5d1b2f;
+    --color-pink-900: #280714;
+
+    --color-teal-100: #ecfbfc;
+    --color-teal-200: #c8f3f6;
+    --color-teal-300: #90e3ec;
+    --color-teal-400: #62c8d6;
+    --color-teal-500: #46a4b7;
+    --color-teal-600: #327e94;
+    --color-teal-700: #215872;
+    --color-teal-800: #133552;
+    --color-teal-900: #08122c;
+
+    font-family: 'Outfit Variable', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-brown-200);
+    color: var(--color-pink-800);
+    margin: 0;
+}
