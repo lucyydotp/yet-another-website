@@ -1,3 +1,4 @@
+import { Button } from "../components/button";
 import { Container } from "../components/container";
 import { useRouter } from "../router";
 
@@ -9,9 +10,9 @@ export function HomePage() {
 	return <Container className={classes.home!}>
 		<div>
 			<h1>Hi! I'm Lucy.</h1>
-			<p>social link icons go here</p>
-			<p>I do cool stuff. Like writing this placeholder text. The world has truly never seen a placeholder text writer quite as cool and swag as me before.</p>
-			<button onClick={() => router.navigate("/about")}>Go somewhere else</button>
+			<p>&lt;social link icons go here&gt;</p>
+			<p>I make fun stuff on the Internet. I try not to take myself too seriously, but I thoroughly enjoy spending time making my work the best it can be.</p>
+			<Button onClick={() => router.navigate("/portfolio")}>Portfolio</Button><br/><br/>
 		</div>
 	</Container>
 }

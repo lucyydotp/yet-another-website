@@ -9,6 +9,7 @@
     transform: unset;
     background-color: var(--color-pink-800);
     box-sizing: border-box;
+    z-index: 1000;
 
     :before {
         position: absolute;

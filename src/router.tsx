@@ -34,9 +34,16 @@ export function Router({routes}: RouterParams) {
 		navigate(route: string, pushState?: boolean) {
 			if (isNavigating) return
 			if (pushState !== false) window.history.pushState({}, "", route)
-			console.log("start nav")
-			setIsNavigating(true)
 			setCurrentRoute(route)
+
+			// Skip the animation entirely for reduced motion
+			if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+				console.log("skipping animation, reduced motion is enabled")
+				setCurrentElement(routes[route] ?? null)
+			} else {
+				console.log("nav start")
+				setIsNavigating(true)
+			}
 		}
 	}), [])
 
