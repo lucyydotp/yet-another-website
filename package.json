@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "tsx --noEmit && vite build"
+        "build": "tsc --noEmit && vite build"
     },
     "devDependencies": {
         "postcss-nesting": "^13.0.2",
