@@ -1,6 +1,6 @@
 import { createContext, type ReactNode, useContext, useEffect, useMemo, useState } from "react";
 import { PageAnimator } from "./components/pageAnimation";
-import { NotFound } from "./pages/404";
+import NotFound from "./pages/404.mdx";
 
 interface RouterParams {
 	routes: Record<string, ReactNode>

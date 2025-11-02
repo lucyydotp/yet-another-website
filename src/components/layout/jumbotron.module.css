@@ -1,0 +1,21 @@
+.jumbotron {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-content: baseline;
+    justify-content: center;
+    width: fit-content;
+    max-width: 40em;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 0 1em;
+
+    > * {
+        flex-grow: 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
+}

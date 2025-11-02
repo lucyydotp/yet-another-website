@@ -1,0 +1,22 @@
+import {faDiscord, faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Button, LinkButton} from "../components/button";
+import {Jumbotron} from "../components/layout/jumbotron";
+import {Row} from "../components/layout/row";
+
+<Jumbotron>
+    # Hi! I'm Lucy.
+    <p>I make fun stuff on the Internet. I try not to take myself too seriously, but I thoroughly enjoy spending
+        time making my work the best it can be.</p>
+    <Row>
+        <LinkButton href="/portfolio">Portfolio</LinkButton>
+        <LinkButton href="https://discord.com/users/199036109760495616"><FontAwesomeIcon
+            icon={faDiscord}/> lucyy.p</LinkButton>
+        <LinkButton href="https://github.com/lucyydotp"><FontAwesomeIcon icon={faGithub}/> lucyydotp</LinkButton>
+        <Button role="link" onClick={() => window.open(`mailto:lucy@${window.location.hostname}`)}>
+            <span><FontAwesomeIcon icon={faEnvelope}/> lucy at this domain</span>
+        </Button>
+    </Row>
+</Jumbotron>
+

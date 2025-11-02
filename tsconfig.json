@@ -4,7 +4,7 @@
         "module": "esnext",
         "target": "esnext",
         "moduleResolution": "bundler",
-        "types": ["vite/client"],
+        "types": ["vite/client", "mdx"],
         "noEmit": true,
         "noUncheckedIndexedAccess": true,
         "exactOptionalPropertyTypes": true,
