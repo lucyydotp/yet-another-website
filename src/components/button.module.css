@@ -5,7 +5,7 @@
 }
 
 .button {
-    color: var(--color-teal-100);
+    color: var(--color-pink-100);
     background-color: var(--color-teal-700);
     border: none;
     outline: none;
@@ -21,6 +21,7 @@
     &:hover {
         transform: scale(1.1) rotate(-1deg);
         background-color: var(--color-teal-600);
+        color: var(--color-teal-100);
     }
 
     &:active {

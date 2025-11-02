@@ -42,3 +42,15 @@ body {
     color: var(--color-pink-800);
     margin: 0;
 }
+
+a {
+    color: var(--color-teal-600);
+}
+
+a:visited {
+    color: var(--color-pink-700);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-pink-600)
+}
