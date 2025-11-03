@@ -4,10 +4,11 @@ import {Button, LinkButton} from "../components/button";
 import {Jumbotron} from "../components/layout/jumbotron";
 import {Row} from "../components/layout/row";
 import {Icon} from "../components/icon.tsx";
+import classes from './home.module.css'
 
 <Jumbotron>
     # Hi! I'm Lucy.
-    <p>I make fun stuff on the Internet. I try not to take myself too seriously, but I thoroughly enjoy spending
+    <p className={classes.text}>I make fun stuff on the Internet. I try not to take myself too seriously, but I thoroughly enjoy spending
         time making my work the best it can be.</p>
     <Row>
         <LinkButton href="/portfolio">Portfolio</LinkButton>

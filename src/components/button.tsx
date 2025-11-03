@@ -1,5 +1,5 @@
 import type { MouseEventHandler } from "preact";
-import { type ComponentProps, type PropsWithChildren, } from "preact/compat";
+import type { ComponentProps, PropsWithChildren } from "preact/compat";
 import { useCallback, useRef } from "preact/hooks";
 import { useRouter } from "../router";
 import classes from './button.module.css'

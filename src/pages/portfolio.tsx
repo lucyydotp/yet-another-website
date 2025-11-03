@@ -4,13 +4,15 @@ import classes from './portfolio.module.css'
 
 function PortfolioEntry(props: PropsWithChildren<{
 	title: string,
-	subtitle?: string,
+	subtitle: string,
+	url?: string,
+	urlDisplay?: string,
 	dates?: string,
 }>) {
 	return <article className={classes.article}>
 		<header>
 			<h2>{props.title}</h2>
-			{props.subtitle && <p>{props.subtitle}</p>}
+			<p>{props.subtitle}{props.url && <><span style={{color: "var(--color-brown-500)"}}> | </span> <a href={props.url}>{props.urlDisplay ?? props.url}</a></>}</p>
 			{props.dates && <p>{props.dates}</p>}
 		</header>
 		{props.children}
@@ -29,6 +31,7 @@ export default function PortfolioPage() {
 
 		<PortfolioEntry
 			title="SoulSteel"
+			url="https://soulsteel.net"
 			subtitle="Noxcrew, Mojang Studios"
 			dates="October 2025 - Present"
 		>
@@ -40,6 +43,8 @@ export default function PortfolioPage() {
 
 		<PortfolioEntry
 			title="MCC x Minecraft 15th Anniversary Party"
+			url="https://www.minecraft.net/article/mcc-x-minecraft-the-ender-cup-almost-here"
+			urlDisplay="https://minecraft.net/article/mcc-x-minecraft-the-ender-cup-almost-here"
 			subtitle="Noxcrew, Mojang Studios"
 			dates="August 2024"
 		>
@@ -51,6 +56,7 @@ export default function PortfolioPage() {
 
 		<PortfolioEntry
 			title="MCC Island"
+			url="https://mcchampionship.com/island"
 			subtitle="Noxcrew"
 			dates="March 2023 - Present"
 		>
@@ -61,6 +67,7 @@ export default function PortfolioPage() {
 		</PortfolioEntry>
 		<PortfolioEntry
 			title="Minecraft Marketplace content"
+			url="https://noxcrew.com/creations"
 			subtitle="Noxcrew"
 			dates="October 2022 - Present"
 		>

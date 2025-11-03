@@ -43,11 +43,7 @@ body {
     margin: 0;
 }
 
-a {
-    color: var(--color-teal-600);
-}
-
-a:visited {
+a, a:visited {
     color: var(--color-pink-700);
 }
 
