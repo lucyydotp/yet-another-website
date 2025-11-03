@@ -1,11 +1,6 @@
-import {
-	type ComponentProps,
-	type MouseEventHandler,
-	type PropsWithChildren,
-	useCallback,
-	useContext,
-	useRef
-} from "react";
+import type { MouseEventHandler } from "preact";
+import { type ComponentProps, type PropsWithChildren, } from "preact/compat";
+import { useCallback, useRef } from "preact/hooks";
 import { useRouter } from "../router";
 import classes from './button.module.css'
 
@@ -25,31 +20,34 @@ export function Button(props: PropsWithChildren<ButtonProps & ComponentProps<"bu
 		props.onClick?.()
 	}, [ref])
 
+	const {children, ...rest} = props
 
 	return <button
-		{...props}
+		{...rest}
 		ref={ref}
 		data-clicked={false}
 		onClick={click}
 		onMouseDown={mouseDown}
 		className={`${classes.button} ${props.className ?? ''}`}>
-		{props.children}
+		{children}
 	</button>
 }
 
-export function LinkButton(props: PropsWithChildren<ComponentProps<"a">>) {
+export function LinkButton(props: PropsWithChildren<ComponentProps<"a">> & { href?: string }) {
 	const router = useRouter()
 
-	const click = useCallback<MouseEventHandler>((e)=> {
+	const click = useCallback<MouseEventHandler<EventTarget>>((e) => {
 		if (props.href?.startsWith("/")) {
 			e.preventDefault()
 			router.navigate(props.href)
 		}
 	}, [props.href])
 
-	return <a {...props} className={classes.buttonLink} onClick={click}>
+	const {children, ...rest} = props
+
+	return <a {...rest} className={classes.buttonLink} onClick={click}>
 		<Button>
-			{props.children}
+			{children}
 		</Button>
 	</a>
 }

@@ -1,6 +1,7 @@
-import {createRoot} from "react-dom/client";
+import { render } from "preact";
 import { App } from "./app";
 
-createRoot(
+render(
+	<App/>,
 	document.getElementById("app")!
-).render(<App/>)
+)

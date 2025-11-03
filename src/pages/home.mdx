@@ -1,9 +1,9 @@
 import {faDiscord, faGithub} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Button, LinkButton} from "../components/button";
 import {Jumbotron} from "../components/layout/jumbotron";
 import {Row} from "../components/layout/row";
+import {Icon} from "../components/icon.tsx";
 
 <Jumbotron>
     # Hi! I'm Lucy.
@@ -11,11 +11,11 @@ import {Row} from "../components/layout/row";
         time making my work the best it can be.</p>
     <Row>
         <LinkButton href="/portfolio">Portfolio</LinkButton>
-        <LinkButton href="https://discord.com/users/199036109760495616"><FontAwesomeIcon
+        <LinkButton href="https://discord.com/users/199036109760495616"><Icon
             icon={faDiscord}/> lucyy.p</LinkButton>
-        <LinkButton href="https://github.com/lucyydotp"><FontAwesomeIcon icon={faGithub}/> lucyydotp</LinkButton>
+        <LinkButton href="https://github.com/lucyydotp"><Icon icon={faGithub}/> lucyydotp</LinkButton>
         <Button role="link" onClick={() => window.open(`mailto:lucy@${window.location.hostname}`)}>
-            <span><FontAwesomeIcon icon={faEnvelope}/> lucy at this domain</span>
+            <span><Icon icon={faEnvelope}/> lucy at this domain</span>
         </Button>
     </Row>
 </Jumbotron>

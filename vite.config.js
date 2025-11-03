@@ -3,7 +3,9 @@ import {defineConfig} from 'vite'
 
 export default defineConfig({
 	plugins: [
-		mdx()
+		mdx({
+            jsxImportSource: "preact"
+        }),
 	]
 })
 

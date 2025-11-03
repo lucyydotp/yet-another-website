@@ -1,4 +1,4 @@
-import type { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "preact/compat";
 import { Container } from "../components/container";
 import classes from './portfolio.module.css'
 

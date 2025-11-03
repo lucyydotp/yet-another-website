@@ -1,4 +1,4 @@
-import type { ComponentProps } from "react";
+import type { ComponentProps } from "preact/compat";
 import classes from './row.module.css'
 
 export function Row(props: ComponentProps<"div">) {

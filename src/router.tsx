@@ -1,4 +1,6 @@
-import { createContext, type ReactNode, useContext, useEffect, useMemo, useState } from "react";
+import { createContext} from "preact";
+import type { ReactNode } from "preact/compat";
+import { useContext, useEffect, useMemo, useState } from "preact/hooks";
 import { PageAnimator } from "./components/pageAnimation";
 import NotFound from "./pages/404.mdx";
 
